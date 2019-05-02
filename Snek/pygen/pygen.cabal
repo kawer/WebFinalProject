@@ -1,0 +1,83 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.1.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: a7d7f08c1060f39fd56ff7accd2e88f1c37293eee0f282ddd297afee090710d2
+
+name:           pygen
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/snekServer#readme>
+homepage:       https://github.com/githubuser/snekServer#readme
+bug-reports:    https://github.com/githubuser/snekServer/issues
+author:         Eduardo Hidalgo
+maintainer:     eshidalgo97@gmail.com
+copyright:      2019 Eduardo Hidalgo
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/snekServer
+
+library
+  exposed-modules:
+      Ans
+      AST
+      Eval
+      Gen
+      Lib
+      ToCode
+      ToPython
+  other-modules:
+      Paths_pygen
+  hs-source-dirs:
+      src
+  build-depends:
+      QuickCheck
+    , aeson
+    , base >=4.7 && <5
+    , bytestring
+    , pretty
+    , random
+  default-language: Haskell2010
+
+executable pygen
+  main-is: Main.hs
+  other-modules:
+      Paths_pygen
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , aeson
+    , base >=4.7 && <5
+    , bytestring
+    , pretty
+    , pygen
+    , random
+  default-language: Haskell2010
+
+test-suite pygen-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_pygen
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      QuickCheck
+    , aeson
+    , base >=4.7 && <5
+    , bytestring
+    , pretty
+    , pygen
+    , random
+  default-language: Haskell2010

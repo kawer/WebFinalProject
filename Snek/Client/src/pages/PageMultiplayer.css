@@ -1,0 +1,23 @@
+.PageMultiplayer .BackgroundImage {
+  position: fixed;
+
+  transform-origin: 75% 75%;
+  transform: scale(25);
+
+  bottom: 0;
+  right: 0;
+
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.PageMultiplayer .WaitingPlayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.PageMultiplayer .WaitingPlayer > *:last-child {
+  margin-top: 16px;
+}

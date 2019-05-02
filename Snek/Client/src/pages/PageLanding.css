@@ -1,0 +1,16 @@
+.PageLanding .Toolbar {
+  display: flex;
+}
+
+.PageLanding .Toolbar .MenuIcon {
+  margin: 0 8px 0 -8px;
+}
+
+.PageLanding .Toolbar .Title {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.LoginDialogForm {
+  padding: 0 16px 16px 16px;
+}

@@ -1,0 +1,24 @@
+.PageLevels {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin-left: 24px;
+}
+
+.PageLevels .LevelCard {
+  width: calc(50% - 48px);
+  margin: 48px 24px 0 24px;
+}
+
+.PageLevels .BackgroundImage {
+  position: fixed;
+
+  transform-origin: 75% 75%;
+  transform: scale(25);
+
+  bottom: 0;
+  right: 0;
+
+  opacity: 0.1;
+  z-index: -1;
+}

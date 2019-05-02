@@ -1,0 +1,26 @@
+.Core .Toolbar {
+  display: flex;
+}
+
+.Core .MainMenu {
+  max-width: 240px;
+  width: 100%;
+}
+
+.Core .Toolbar .MenuIcon {
+  margin: 0 8px 0 -8px;
+}
+
+.Core .Toolbar .Title {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.Core .PageContainer {
+  padding-top: 64px;
+  min-height: calc(100vh - 64px);
+}
+
+.Core .ErrorSnackbar {
+  background-color: red;
+}

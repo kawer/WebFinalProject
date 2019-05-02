@@ -1,0 +1,12 @@
+
+
+*** TODO Is the ~Gen a~ Quickcheck type needed, or is `Random a` enough?
+
+*** TODO how do I take the value out of a `Gen a` ? i.e. how do you run a Gen
+
+*** TODO IntDiv should have a lhs greater than rhs ?
+
+*** TODO should we avoid div by zero? or put it as an exception ?
+
+*** TODO Add possibility of adding "constraints" i.e., using the the `suchThat`
+http://hackage.haskell.org/package/QuickCheck-2.12.6.1/docs/Test-QuickCheck-Gen.html#v:suchThat

@@ -1,0 +1,9 @@
+.Link {
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+}
+
+.Link > * {
+  flex-grow: 1;
+}
